@@ -1,0 +1,100 @@
+body {
+    background-image: url('5.jpg');
+    background-size: 100px; 
+    background-position: 700px; /
+}
+
+.border{
+    margin: auto;
+    width: 1000px;
+    height: 1100px;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ffffff;
+    background-color: #dbcfd7;
+}
+
+.bg{
+    margin: auto;
+    width: 700px;
+    height: 900px;
+    fill-opacity: 0.5;
+    opacity: 0.5;
+}
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+h1{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Algerian;
+    font-size: 40px;
+}
+
+.margin{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.p1{
+    margin-left: 20px;
+}
+
+.image{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    background-color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-top: 40px;
+}
+
+.gambar{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    overflow: visible;
+}
+
+.gambar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    transition: transform 0.3 ease; /* Smooth Transition*/
+}
+
+.gambar:hover img{
+    transform: scale(1.1); /* Scale the image on hover*/
+}
+
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 100;
+    transition: opacity 0.3s ease; /* Smooth Transition*/
+}
+
+.gambar:hover .image-overlay{
+    opacity: 1; /* Show overlay on hover*/
+}
